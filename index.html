@@ -1,0 +1,45 @@
+---
+layout: default
+---
+  <div class="page-header">
+    <h1>Introduction</h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+        {% markdown introduction.md %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+        {% markdown exploiting_poodle.md %}
+    </div> 
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      {% markdown server_intro.md %}
+      {% for post in site.categories.server %}
+          <h4>{{ post.title }}</h4>
+         {{ post.content }}
+      {% endfor %}
+      {% markdown server_check.md %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      {% markdown browser_intro.md %}
+      {% for post in site.categories.browser %}
+        <h4>{{ post.title }}</h4>
+        {{ post.content }}
+      {% endfor %}
+      {% markdown browser_check.md %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+        {% markdown is_there_another_way.md %}
+    </div> 
+  </div>
