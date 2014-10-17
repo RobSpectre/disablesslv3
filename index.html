@@ -1,45 +1,46 @@
 ---
 layout: default
 ---
-  <div class="page-header">
-    <h1>Introduction</h1>
+  <div class="jumbotron">
+    <h1>Disable SSLv3 - Stomping The 💩-dle</h1>
+    <h2>A community-powered step-by-step tutorial on disabling the security protocol you love to hate.</h2>
   </div>
   <div class="row">
     <div class="col-lg-12">
-        {% markdown introduction.md %}
+        {% include introduction.html %}
     </div>
   </div>
 
   <div class="row">
     <div class="col-lg-12">
-        {% markdown exploiting_poodle.md %}
+        {% include exploiting_poodle.html %}
     </div> 
   </div>
 
   <div class="row">
     <div class="col-lg-12">
-      {% markdown server_intro.md %}
+      {% include server_intro.html %}
       {% for post in site.categories.server %}
           <h4>{{ post.title }}</h4>
          {{ post.content }}
       {% endfor %}
-      {% markdown server_check.md %}
+      {% markdown server_check.html %}
     </div>
   </div>
 
   <div class="row">
     <div class="col-lg-12">
-      {% markdown browser_intro.md %}
+      {% include browser_intro.html %}
       {% for post in site.categories.browser %}
         <h4>{{ post.title }}</h4>
         {{ post.content }}
       {% endfor %}
-      {% markdown browser_check.md %}
+      {% markdown browser_check.html %}
     </div>
   </div>
 
   <div class="row">
     <div class="col-lg-12">
-        {% markdown is_there_another_way.md %}
+        {% markdown is_there_another_way.html %}
     </div> 
   </div>
