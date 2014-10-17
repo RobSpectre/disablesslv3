@@ -24,7 +24,7 @@ layout: default
           <h4>{{ post.title }}</h4>
          {{ post.content }}
       {% endfor %}
-      {% markdown server_check.html %}
+      {% include server_check.html %}
     </div>
   </div>
 
@@ -35,12 +35,12 @@ layout: default
         <h4>{{ post.title }}</h4>
         {{ post.content }}
       {% endfor %}
-      {% markdown browser_check.html %}
+      {% include browser_check.html %}
     </div>
   </div>
 
   <div class="row">
     <div class="col-lg-12">
-        {% markdown is_there_another_way.html %}
+        {% include is_there_another_way.html %}
     </div> 
   </div>
