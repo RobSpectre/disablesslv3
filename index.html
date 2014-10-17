@@ -2,45 +2,51 @@
 layout: default
 ---
   <div class="jumbotron">
-    <h1>Disable SSLv3 - Stomping The 💩-dle</h1>
-    <h2>A community-powered step-by-step tutorial on disabling the security protocol you love to hate.</h2>
+      <div class="container">
+      <h1>Disable SSLv3</h1>
+      <h2>Mitigating The :poop:-dle</h2>
+      <h2>A community-powered step-by-step tutorial on disabling the security
+          protocol you now love to hate.</h2>
+      </div>
   </div>
-  <div class="row">
-    <div class="col-lg-12">
-        {% include introduction.html %}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+          {% include introduction.html %}
+      </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12">
-        {% include exploiting_poodle.html %}
-    </div> 
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12">
-      {% include server_intro.html %}
-      {% for post in site.categories.server %}
+  
+    <div class="row">
+      <div class="col-lg-8">
+          {% include exploiting_poodle.html %}
+      </div> 
+    </div>
+  
+    <div class="row">
+      <div class="col-lg-8">
+        {% include server_intro.html %}
+        {% for post in site.categories.server %}
+            <h4>{{ post.title }}</h4>
+           {{ post.content }}
+        {% endfor %}
+        {% include server_check.html %}
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-lg-8">
+        {% include browser_intro.html %}
+        {% for post in site.categories.browser %}
           <h4>{{ post.title }}</h4>
-         {{ post.content }}
-      {% endfor %}
-      {% include server_check.html %}
+          {{ post.content }}
+        {% endfor %}
+        {% include browser_check.html %}
+      </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12">
-      {% include browser_intro.html %}
-      {% for post in site.categories.browser %}
-        <h4>{{ post.title }}</h4>
-        {{ post.content }}
-      {% endfor %}
-      {% include browser_check.html %}
+  
+    <div class="row">
+      <div class="col-lg-8">
+          {% include is_there_another_way.html %}
+      </div> 
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12">
-        {% include is_there_another_way.html %}
-    </div> 
   </div>
