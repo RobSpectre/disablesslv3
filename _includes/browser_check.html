@@ -1,21 +1,32 @@
 <h2>How To Check Your Browser</h2>
 
-<p>If you want to check that your browser changes have definitely removed SSLv3.0 support there are a couple of sites that you can use. If you visit <a href="https://zmap.io/sslv3/">https://zmap.io/sslv3/</a> with SSLv3 enabled in your browser, you will see the warning message I'm getting here in Chrome where I haven't yet disabled SSLv3. To double check the site was working as expected, I disabled SSLv3 support in Internet Explorer and opened up the site there too. Here you can see the difference. 
+<p>If you want to check that your browser changes have definitely removed
+SSLv3.0 support there are a couple of sites that you can use. If you visit <a
+href="https://zmap.io/sslv3/">https://zmap.io/sslv3/</a> with SSLv3 enabled in
+your browser, you will see the warning message I'm getting here in Chrome where
+I haven't yet disabled SSLv3. To double check the site was working as expected,
+I disabled SSLv3 support in Internet Explorer and opened up the site there too.
+Here you can see the difference.</p>
 
 <img alt="Chrome and IE SSLv3 test" src="/images/chrome-ie-sslv3-support.png"
 /><br />
 
 
-There's also the <a href="https://www.ssllabs.com/ssltest/viewMyClient.html">Qualys SSL Client Test</a> to see what your browser supports. Here is my result in Chrome with SSLv3 still enabled:
+<p>There's also the <a
+href="https://www.ssllabs.com/ssltest/viewMyClient.html">Qualys SSL Client
+Test</a> to see what your browser supports. Here is my result in Chrome with
+SSLv3 still enabled:</p>
 
 <img alt="Qualys Client Test Vulnerable"
 src="/images/qualys-client-test-vulnerable.png" /><br/> 
 
 
-Here is the result in Internet Explorer with SSLv3 disabled:
+<p>Here is the result in Internet Explorer with SSLv3 disabled:</p>
 
 <img alt="Qualys Client Test Not Vulnerable"
 src="/images/qualys-client-test-not-vulnerable.png" /><br />
 
 
-You can also try <a href="https://www.poodletest.com/">https://www.poodletest.com/</a> alongside Zmap and Qualys.
+<p>You can also try <a
+href="https://www.poodletest.com/">https://www.poodletest.com/</a> alongside
+Zmap and Qualys.</p>
