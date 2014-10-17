@@ -13,12 +13,12 @@ Signalling Cipher Suite Value (SCSV) it cannot be selected or used by the server
 as it does not correspond to an actual suite. When the server receives this
 value, it knows the connection attempt is a fallback and can act upon that
 information. If the server supports a protocol version higher than the one
-indicated in the ClientHello when TLS\_FALLBACK\_SCSV is present, the server
-must respond with an inappropriate\_fallback alert and not proceed with the
+indicated in the ClientHello when TLS_FALLBACK_SCSV is present, the server
+must respond with an inappropriate_fallback alert and not proceed with the
 handshake. The server knows that this connection attempt is not the best
 protocol the client can support.</p>
 
-<p>Whilst TLS\_FALLBACK\_SCSV mitigates protocol downgrade attacks, support is
+<p>Whilst TLS_FALLBACK_SCSV mitigates protocol downgrade attacks, support is
 not yet widespread, with OpenSSL having only just <a
 href="https://www.openssl.org/news/secadv_20141015.txt">announce support in
 version 1.0.1j</a> and Google Chrome being the only browser to currently offer
